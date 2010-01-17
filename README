@@ -1,0 +1,3 @@
+This is a little C99 library for accessing files from the PublicPixelMatrix found at http://matrix.cappel-nord.de
+
+The code is far away from perfect and hacked together to receive fast artistic results, not to produce fast and stable software. Sorry that hadn't time yet to document the library, i hope the header file gives you enough informations to get things started.
