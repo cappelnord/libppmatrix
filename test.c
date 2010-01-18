@@ -1,6 +1,7 @@
 /*
  *  test.c
  *  libppmatrix
+ *  http://matrix.cappel-nord.de
  *
  *  Created by Patrick Borgeat on 16.01.10.
  *  Copyright 2010 Patrick Borgeat. All rights reserved.

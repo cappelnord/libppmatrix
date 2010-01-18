@@ -183,3 +183,21 @@ void printPPM(PPM* matrix)
 		}
 	}
 }
+
+int activeFieldsInPPM(PPM* ppm)
+{
+	int ret;
+	
+	for(int y = 0; y < PPMATRIX_DIMENSION; y++)
+	{
+		for(int x = 0; x < PPMATRIX_DIMENSION;x++)
+		{
+			if(ppm->matrix[y][x] != 0)
+			{
+				ret++;
+			}
+		}
+	}
+	
+	return ret;
+}

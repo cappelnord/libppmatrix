@@ -56,5 +56,7 @@ PPMLIST* initPPMList();
 void freePPMList(PPMLIST* list);
 void addPPMToList(PPMLIST* list, PPM* ppm);
 
+int activeFieldsInPPM(PPM* ppm);
+
 
 void printPPM(PPM* matrix);
