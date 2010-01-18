@@ -186,7 +186,7 @@ void printPPM(PPM* matrix)
 
 int activeFieldsInPPM(PPM* ppm)
 {
-	int ret;
+	int ret = 0;
 	
 	for(int y = 0; y < PPMATRIX_DIMENSION; y++)
 	{
