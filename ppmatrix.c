@@ -63,9 +63,12 @@ PPMLIST* readPPMListFromFile(char* fileName)
 	PPMLIST* ret = initPPMList();
 	PPM* ppm;
 	
-	while(ppm = readPPMFromStream(in))
+	ppm = readPPMFromStream(in);
+	
+	while(ppm)
 	{
 		addPPMToList(ret, ppm);
+		ppm = readPPMFromStream(in);
 	}
 	
 	fclose(in);
@@ -173,7 +176,7 @@ void invertPPM(PPM* ppm)
 
 void printPPM(PPM* matrix)
 {
-	printf("Timestamp: %i", matrix->timestamp);
+	printf("Timestamp: %li", matrix->timestamp);
 	for(int y = 0; y < PPMATRIX_DIMENSION; y++)
 	{
 		printf("\n");
