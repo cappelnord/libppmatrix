@@ -44,6 +44,11 @@ struct ppmatrix_list
 
 typedef struct ppmatrix_list PPMLIST;
 
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+	
 char* ppmErrorMessage();
 PPM* readPPMFromStream(FILE* stream);
 PPM* readSinglePPMFromFile(char* fileName);
@@ -60,3 +65,7 @@ int activeFieldsInPPM(PPM* ppm);
 
 
 void printPPM(PPM* matrix);
+
+#ifdef __cplusplus
+}
+#endif
